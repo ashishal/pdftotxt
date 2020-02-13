@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--import stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+  </head>
+  <body>
+
+    <nav class="black" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="webui.html" class="brand-logo">Ask Thamama</a>
+        <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+      </div>
+    </nav>
+
+    
+      
+ 
+  
+    <div class="container inputs " height="" width="100%"  style="padding-top: 12%;">
+      
+      <div class="row " style="margin-top: 5%;margin-left: 32%;">
+        <h5>Enter the keywords here</h5>
+      </div>
+      
+      <form class="search-wrapper " id="searchquery" action="results.html" method="get" id="searchbar">
+          
+          <div class="row">
+            <div class="col s2"></div>
+          
+            <div class="col s6">
+              <input id="search" placeholder="Type your keywords to search here">
+            </div>
+            <div class="col s1 btn" type="button" id="search-icons" onclick="submitFunction()" value="Submit">
+              <i class="material-icons">search</i>
+            </div>
+            <div class="row col s2"></div>
+          </div>
+      </form>
+    </div>
+ 
+      
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <!-- Importing jquery-->
+    <script src="js/jquery.min.js"></script>
+    <!-- jquery function for mouse click on submit-->
+    <script>
+      function submitFunction(){
+        document.getElementById("searchquery").submit();
+      };
+    </script>
+    <script src="js/mouse-animate.js"></script>
+   
+  </body>
+</html>
